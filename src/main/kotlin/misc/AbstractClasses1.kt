@@ -1,5 +1,8 @@
 package misc
 
+//General - Generalization
+//Open classes by default duh
+
 abstract class Music{
     companion object{
         val ending : String = "ok!"
@@ -13,7 +16,7 @@ abstract class Music{
     }
 }
 
-class RapMusic() : Music()
+class RapMusic : Music()
 {
     override val trans: String = "NYC"
     override val prans: String
