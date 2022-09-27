@@ -13,12 +13,17 @@ abstract class Utensil(val name : String)
 
 }
 
-class Fork(val _name : String) : Utensil(_name){
+class Fork(val _name : String, ) : Utensil(_name){
     override val weight: Double
-        get() = 12.2
+        get() = 10.0
 
     override fun work2(): String {
         return "work man"
     }
+}
 
+fun main()
+{
+    val f1 : Fork = Fork("small fork")
+    println(f1.weight.toString())
 }
