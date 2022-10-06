@@ -1,14 +1,14 @@
 package misc
 
 fun main() {
-    println(Something().doSomething())
+    println(Something2().doSomething())
 }
 
 fun openFile(): String {
     return "global"
 }
 
-class Something() {
+class Something2() {
     fun openFile() : String {
         return "class"
     }
